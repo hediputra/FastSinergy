@@ -1,0 +1,369 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "name": "Bambang Wijaya, S.IP",
+      "role": "KADES",
+      "email": "kades.sinergy@fas-tech.id",
+      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150",
+      "status": "AKTIF",
+      "has2FA": true,
+      "is2FAVerified": false
+    },
+    {
+      "id": "u2",
+      "name": "Siti Rahmawati, M.Si",
+      "role": "SEKDES",
+      "email": "sekdes.sinergy@fas-tech.id",
+      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150",
+      "status": "AKTIF",
+      "has2FA": true,
+      "is2FAVerified": false
+    },
+    {
+      "id": "u3",
+      "name": "Budi Santoso",
+      "role": "KAUR_UMUM",
+      "email": "kaur.umum@fas-tech.id",
+      "avatar": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150",
+      "status": "AKTIF",
+      "has2FA": false,
+      "is2FAVerified": true
+    },
+    {
+      "id": "u4",
+      "name": "Lilis Handayani, S.E.",
+      "role": "KAUR_KEUANGAN",
+      "email": "kaur.keuangan@fas-tech.id",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150",
+      "status": "AKTIF",
+      "has2FA": false,
+      "is2FAVerified": true
+    },
+    {
+      "id": "u5",
+      "name": "Agus Pratama",
+      "role": "KAUR_PERENCANAAN",
+      "email": "kaur.perencana@fas-tech.id",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150",
+      "status": "AKTIF",
+      "has2FA": false,
+      "is2FAVerified": true
+    },
+    {
+      "id": "u6",
+      "name": "Dedi Setiadi",
+      "role": "KASI_PEMERINTAHAN",
+      "email": "kasi.pemerintahan@fas-tech.id",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150",
+      "status": "AKTIF",
+      "has2FA": false,
+      "is2FAVerified": true
+    },
+    {
+      "id": "u7",
+      "name": "Hendra Wijaya",
+      "role": "KASI_KESEJAHTERAAN",
+      "email": "kasi.kesra@fas-tech.id",
+      "avatar": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=150",
+      "status": "AKTIF",
+      "has2FA": false,
+      "is2FAVerified": true
+    },
+    {
+      "id": "u8",
+      "name": "Rina Astuti",
+      "role": "KASI_PELAYANAN",
+      "email": "kasi.pelayanan@fas-tech.id",
+      "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150",
+      "status": "AKTIF",
+      "has2FA": false,
+      "is2FAVerified": true
+    },
+    {
+      "id": "u9",
+      "name": "Wawan Kurniawan",
+      "role": "KADUS",
+      "email": "kadus.krajan@fas-tech.id",
+      "avatar": "https://images.unsplash.com/photo-1542327897-d73f4005b533?w=150",
+      "status": "AKTIF",
+      "has2FA": false,
+      "is2FAVerified": true
+    }
+  ],
+  "workflows": [
+    {
+      "id": "w1",
+      "title": "SPP - Pembangunan Jembatan Dusun Krajan",
+      "type": "SPP",
+      "creator_id": "u9",
+      "creator_name": "Wawan Kurniawan",
+      "creator_role": "KADUS",
+      "amount": 45000000,
+      "description": "Pengajuan Surat Permintaan Pembayaran untuk tahap I pembangunan jembatan penghubung di wilayah Dusun Krajan.",
+      "current_step_index": 0,
+      "status": "PENDING",
+      "steps": [
+        {
+          "id": "s1_1",
+          "role": "KAUR_KEUANGAN",
+          "status": "PENDING",
+          "comment": ""
+        },
+        {
+          "id": "s1_2",
+          "role": "SEKDES",
+          "status": "PENDING",
+          "comment": ""
+        },
+        {
+          "id": "s1_3",
+          "role": "KADES",
+          "status": "PENDING",
+          "comment": ""
+        }
+      ],
+      "created_at": "2026-07-01T10:00:00.000Z",
+      "updated_at": "2026-07-01T10:00:00.000Z",
+      "document_url": "/docs/spp_jembatan_krajan.pdf"
+    },
+    {
+      "id": "w2",
+      "title": "Perjalanan Dinas Konsultasi Bupati",
+      "type": "PERJALANAN_DINAS",
+      "creator_id": "u2",
+      "creator_name": "Siti Rahmawati, M.Si",
+      "creator_role": "SEKDES",
+      "amount": 1500000,
+      "description": "Koordinasi program prioritas ketahanan pangan desa dengan dinas PMD Kabupaten.",
+      "current_step_index": 1,
+      "status": "PENDING",
+      "steps": [
+        {
+          "id": "s2_1",
+          "role": "KAUR_UMUM",
+          "user_name": "Budi Santoso",
+          "status": "APPROVED",
+          "comment": "Berkas dinas lengkap, surat tugas disiapkan.",
+          "updated_at": "2026-07-02T11:00:00.000Z"
+        },
+        {
+          "id": "s2_2",
+          "role": "KADES",
+          "status": "PENDING",
+          "comment": ""
+        }
+      ],
+      "created_at": "2026-07-02T09:00:00.000Z",
+      "updated_at": "2026-07-02T11:00:00.000Z",
+      "document_url": "/docs/spt_konsultasi_bupati.pdf"
+    },
+    {
+      "id": "w3",
+      "title": "Rancangan Perdes Pengelolaan Sampah",
+      "type": "PERATURAN_DESA",
+      "creator_id": "u6",
+      "creator_name": "Dedi Setiadi",
+      "creator_role": "KASI_PEMERINTAHAN",
+      "description": "Draft Peraturan Desa tentang pengelolaan sampah terpadu dan denda pembuangan sampah sembarangan.",
+      "current_step_index": 1,
+      "status": "PENDING",
+      "steps": [
+        {
+          "id": "s3_1",
+          "role": "SEKDES",
+          "user_name": "Siti Rahmawati, M.Si",
+          "status": "APPROVED",
+          "comment": "Draft sesuai tata naskah regulasi desa.",
+          "updated_at": "2026-07-03T15:30:00.000Z"
+        },
+        {
+          "id": "s3_2",
+          "role": "KADES",
+          "status": "PENDING",
+          "comment": ""
+        }
+      ],
+      "created_at": "2026-07-03T08:00:00.000Z",
+      "updated_at": "2026-07-03T15:30:00.000Z",
+      "document_url": "/docs/draft_perdes_sampah.pdf"
+    }
+  ],
+  "documents": [
+    {
+      "id": "d1",
+      "title": "Surat Undangan Musrenbangdes 2026",
+      "type": "SURAT_MASUK",
+      "sender_or_receiver": "Kecamatan Pancoran",
+      "reference_number": "005/124/Kec/2026",
+      "category": "Undangan",
+      "description": "Undangan menghadiri Musyawarah Perencanaan Pembangunan Kecamatan tahun anggaran 2026.",
+      "created_at": "2026-07-01T08:30:00.000Z",
+      "uploaded_by": "Budi Santoso"
+    },
+    {
+      "id": "d2",
+      "title": "Surat Pengantar Laporan Semester I APBDes",
+      "type": "SURAT_KELUAR",
+      "sender_or_receiver": "Bupati via Camat",
+      "reference_number": "141/089/DS-Srg/2026",
+      "category": "Laporan",
+      "description": "Surat pengantar penyerahan fisik dokumen laporan realisasi APBDes Sinergy Semester I Tahun Anggaran 2026.",
+      "created_at": "2026-07-02T14:15:00.000Z",
+      "uploaded_by": "Budi Santoso"
+    },
+    {
+      "id": "d3",
+      "title": "Ekspedisi Pengiriman Proposal Sumur Bor",
+      "type": "EKSPEDISI",
+      "sender_or_receiver": "Dinas Pekerjaan Umum Kab",
+      "reference_number": "141/EXP/02/2026",
+      "category": "Proposal",
+      "description": "Buku ekspedisi pengiriman proposal bantuan sumur bor irigasi Dusun Krajan.",
+      "created_at": "2026-07-03T09:00:00.000Z",
+      "uploaded_by": "Budi Santoso"
+    }
+  ],
+  "assets": [
+    {
+      "id": "a1",
+      "name": "Tanah Kas Desa (Sawah)",
+      "code": "ASD-001",
+      "category": "TANAH",
+      "condition": "BAIK",
+      "value": 1200000000,
+      "acquisition_date": "1998-05-12",
+      "location": "Blok Pesawahan Timur",
+      "managed_by": "Kaur Umum (Penyewaan Kas)"
+    },
+    {
+      "id": "a2",
+      "name": "Gedung Balai Pertemuan Desa",
+      "code": "ASD-002",
+      "category": "BANGUNAN",
+      "condition": "BAIK",
+      "value": 450000000,
+      "acquisition_date": "2015-08-20",
+      "location": "Jl. Raya Sinergy No. 1",
+      "managed_by": "Kaur Umum"
+    },
+    {
+      "id": "a3",
+      "name": "Sepeda Motor Dinas Honda CRF",
+      "code": "ASD-003",
+      "category": "KENDARAAN",
+      "condition": "BAIK",
+      "value": 34000000,
+      "acquisition_date": "2021-03-05",
+      "location": "Garasi Kantor Desa",
+      "managed_by": "Sekretaris Desa"
+    },
+    {
+      "id": "a4",
+      "name": "Laptop ASUS Core i5 Kantor",
+      "code": "ASD-004",
+      "category": "PERALATAN",
+      "condition": "RUSAK_RINGAN",
+      "value": 8500000,
+      "acquisition_date": "2020-02-15",
+      "location": "Ruang Kaur Keuangan",
+      "managed_by": "Lilis Handayani, S.E."
+    }
+  ],
+  "notifications": [
+    {
+      "id": "n1",
+      "user_id": "u1",
+      "title": "Persetujuan Tertunda",
+      "message": "Anda memiliki 3 dokumen persetujuan baru (SPP, Perjalanan Dinas, Perdes). Mohon segera tinjau.",
+      "is_read": false,
+      "created_at": "2026-07-04T01:00:00.000Z"
+    },
+    {
+      "id": "n2",
+      "user_id": "u2",
+      "title": "Verifikasi SPP Masuk",
+      "message": "Kadus Wawan mengajukan SPP Pembangunan Jembatan Dusun Krajan. Mohon verifikasi kelengkapan.",
+      "is_read": false,
+      "created_at": "2026-07-04T01:05:00.000Z"
+    },
+    {
+      "id": "n3",
+      "user_id": "u4",
+      "title": "Draft Anggaran APBDes 2026",
+      "message": "Kaur Perencanaan telah selesai merancang program pembangunan. Silakan integrasikan ke draf APBDes.",
+      "is_read": true,
+      "created_at": "2026-07-03T16:00:00.000Z"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "t1",
+      "title": "Susun Laporan Semester I APBDes 2026",
+      "description": "Laporan realisasi anggaran semester I tahun 2026 harus diserahkan kepada Bupati.",
+      "assigned_to": "KAUR_KEUANGAN",
+      "assigned_by": "Bambang Wijaya, S.IP",
+      "status": "PROSES",
+      "due_date": "2026-07-15",
+      "created_at": "2026-07-02T08:00:00.000Z"
+    },
+    {
+      "id": "t2",
+      "title": "Mulai Sosialisasi Ketertiban Lingkungan",
+      "description": "Lakukan patroli keliling dusun dan pasang spanduk peringatan ketertiban warga.",
+      "assigned_to": "KADUS",
+      "assigned_by": "Dedi Setiadi",
+      "status": "PENDING",
+      "due_date": "2026-07-10",
+      "created_at": "2026-07-03T09:00:00.000Z"
+    },
+    {
+      "id": "t3",
+      "title": "Persiapan Berkas Pembayaran Bantuan Sosial",
+      "description": "Verifikasi daftar penerima bansos tunai dari kementerian sosial untuk warga kurang mampu.",
+      "assigned_to": "KASI_KESEJAHTERAAN",
+      "assigned_by": "Siti Rahmawati, M.Si",
+      "status": "SELESAI",
+      "due_date": "2026-07-03",
+      "created_at": "2026-07-01T10:00:00.000Z"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "l1",
+      "user_name": "Budi Santoso",
+      "role": "KAUR_UMUM",
+      "action": "Mengunggah Surat Undangan Musrenbangdes 2026",
+      "ip_address": "192.168.1.52",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+      "created_at": "2026-07-01T08:31:00.000Z"
+    },
+    {
+      "id": "l2",
+      "user_name": "Wawan Kurniawan",
+      "role": "KADUS",
+      "action": "Membuat pengajuan SPP Pembangunan Jembatan Dusun Krajan Rp45.000.000",
+      "ip_address": "192.168.1.104",
+      "user_agent": "Mozilla/5.0 (Android 12; Mobile)",
+      "created_at": "2026-07-01T10:00:15.000Z"
+    },
+    {
+      "id": "l3",
+      "user_name": "Siti Rahmawati, M.Si",
+      "role": "SEKDES",
+      "action": "Memverifikasi & menyetujui rancangan Perdes Pengelolaan Sampah",
+      "ip_address": "192.168.1.15",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X)",
+      "created_at": "2026-07-03T15:30:22.000Z"
+    },
+    {
+      "id": "l4",
+      "user_name": "Bambang Wijaya, S.IP",
+      "role": "KADES",
+      "action": "Berhasil mengonfirmasi login 2-Factor Authentication",
+      "ip_address": "192.168.1.10",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+      "created_at": "2026-07-04T02:00:05.000Z"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Website Desa Sinergy",
+  "description": "Sistem Informasi Tata Pamong & Administrasi Desa Sinergy berbasis Peran (RBAC), dilengkapi Alur Persetujuan (Approval Workflow), Manajemen Aset, DMS, dan Audit Trail oleh PT Fas Technology Solutions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
